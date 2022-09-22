@@ -1,0 +1,164 @@
+$color-bg: #1e1e1e;
+$color-particle: #fff;
+$spacing: 2560px;
+$time-1: 60s;
+$time-2: 200s;
+
+/* -------배경 particles------- */
+@function particles($max) {
+  $val: 0px 0px $color-particle;
+  @for $i from 1 through $max {
+    $val: #{$val}, random($spacing) + px random($spacing) + px $color-particle;
+  }
+  @return $val;
+}
+
+@mixin particles($max) {
+  box-shadow: particles($max);
+  border-radius: 50%;
+}
+
+.pagebg,
+.animationwrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.pagebg {
+  background: $color-bg;
+  background-blend-mode: screen;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+.particle,
+.particle:after {
+  background: transparent;
+}
+
+.particle:after {
+  position: absolute;
+  content: "";
+  top: $spacing;
+}
+
+.particle1 {
+  animation: animParticle $time-1 linear infinite;
+  @include particles(1000);
+  height: 2px;
+  width: 2px;
+}
+
+.particle1:after {
+  @include particles(900);
+  height: 2px;
+  width: 2px;
+}
+
+.particle2 {
+  animation: animParticle $time-2 linear infinite;
+  @include particles(1200);
+  height: 1px;
+  width: 1px;
+}
+
+.particle2:after {
+  @include particles(700);
+  height: 1px;
+  width: 1px;
+}
+
+@keyframes animParticle {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY($spacing * -1);
+  }
+}
+/* -------------------------- */
+
+.container {
+  padding: 0;
+}
+
+.mainContainer {
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentContainer {
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContainer h1 {
+  font-size: 4.2rem;
+  margin-bottom: 10rem;
+  color: white;
+  text-shadow: 0 0 0.5rem #fff, 0 0 2rem #84d0ff, 0 0 3rem #84d0ff,
+    0 0 4.5rem #84d0ff;
+}
+
+.mainContainer h2 {
+  font-size: 2.8rem;
+  color: white;
+}
+
+.mainContainer p {
+  width: 30vw;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.profile {
+  border-radius: 50%;
+}
+
+.scrollButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 2rem;
+  animation: MoveUpDown 1s linear infinite;
+}
+
+.arrowDown {
+  border: solid white;
+  border-width: 0 0.8rem 0.8rem 0;
+  display: inline-block;
+  padding: 1rem;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.arrowUp {
+  border: solid white;
+  border-width: 0 0.8rem 0.8rem 0;
+  display: inline-block;
+  padding: 1rem;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+}

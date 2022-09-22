@@ -1,0 +1,17 @@
+.container {
+  background-color: none;
+  width: 60rem;
+  height: 30rem;
+  color: white;
+}
+
+.content {
+  background-color: none;
+  width: 60rem;
+  height: 30rem;
+  position: relative;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

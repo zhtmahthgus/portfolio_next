@@ -1,0 +1,78 @@
+.container {
+  background-color: none;
+  width: 50vw;
+  height: 25rem;
+  color: white;
+  margin-top: 5rem;
+}
+
+.content {
+  background-color: none;
+  width: 50vw;
+  height: 20rem;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contactbutton {
+  background-color: rgba(117, 189, 218, 0.3);
+  color: white;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  border-radius: 5rem;
+}
+
+.Contactbutton:hover {
+  background-color: rgba(117, 189, 218, 0.6);
+}
+
+.Closebutton {
+  background: none;
+  color: white;
+  font-size: 1.8rem;
+  border: none;
+}
+
+.Closebutton:hover {
+  font-weight: bold;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  height: 40vh;
+  background-color: rgba(117, 189, 218, 0.3);
+  border-radius: 0.5rem;
+  animation: fadeIn 1s;
+}
+
+.modalHeader {
+  width: 30vw;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modalContent {
+  width: 30vw;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
