@@ -81,7 +81,7 @@ const Content3 = (
     </div>
     <p className={styles.title}>
       <span className={styles.tooltip}>
-        ReactNative, Django, Tensorflow,
+        ReactNative, Django, Pytorch
         <span className={styles.tooltipText}>팀 프로젝트 경험 1회</span>
       </span>
     </p>

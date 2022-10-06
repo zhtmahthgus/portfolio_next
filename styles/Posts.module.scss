@@ -7,9 +7,32 @@
   color: white;
 }
 
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttonContainer {
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
   margin: 0;
   font-size: 2.8rem;
+}
+
+.description {
+  width: 80rem;
+  font-size: 1.2rem;
+  word-break: keep-all;
+  white-space: pre-line;
+  text-align: center;
 }
 
 .category {
@@ -19,7 +42,12 @@
 }
 
 .contents {
+  width: 60rem;
   font-size: 1.4rem;
+  word-break: break-all;
+  h2 {
+    font-size: 1.8rem;
+  }
 }
 
 .link {
@@ -29,4 +57,22 @@
 
 .link:hover {
   text-decoration: underline;
+}
+
+.optionButton {
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.optionButton_selected {
+  width: 1rem;
+  height: 1rem;
+  background-color: #84d0ff;
+  border: none;
+  border-radius: 50%;
+  margin: 0.5rem;
 }

@@ -48,7 +48,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>KimSH Portfolio</title>
         <meta name="description" content="Next.js로 제작된 포트폴리오입니다." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/myIcon.ico" />
       </Head>
       <div className={styles.mainContainer}>
         <div className={styles.pagebg}></div>
