@@ -86,6 +86,17 @@ $time-2: 200s;
   padding: 0;
 }
 
+.mobileContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-bg;
+  color: white;
+  font-size: 1.4rem;
+}
+
 .mainContainer {
   min-height: 100vh;
   flex: 1;

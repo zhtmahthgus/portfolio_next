@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 1s;
 }
 
 .buttonContainer {
@@ -25,6 +26,7 @@
 .title {
   margin: 0;
   font-size: 2.8rem;
+  text-shadow: 0 0 0.5rem #84d0ff, 0 0 1rem #84d0ff, 0 0 2rem #84d0ff;
 }
 
 .description {
@@ -65,7 +67,11 @@
   background-color: white;
   border: none;
   border-radius: 50%;
-  margin: 0.5rem;
+  margin: 0.8rem;
+}
+
+.optionButton:hover {
+  background-color: #d4efff;
 }
 
 .optionButton_selected {
@@ -74,5 +80,25 @@
   background-color: #84d0ff;
   border: none;
   border-radius: 50%;
-  margin: 0.5rem;
+  margin: 0.8rem;
+}
+
+.optionTitle {
+  font-size: 1.4rem;
+}
+
+.optionTitle_selected {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -5%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
 }

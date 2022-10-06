@@ -10,12 +10,36 @@ const Content0 = (
 );
 const Content1 = (
   <div>
-    <p className={styles.title}>고양외국어고등학교</p>
-    <p className={styles.date}>2015.03 - 2018.02</p>
-    <p className={styles.title}>이화여자대학교</p>
-    <p className={styles.date}>
-      2019.03 - 2023.02{"("}예정{")"}
-    </p>
+    <div className={styles.content1Container}>
+      <Image
+        className={styles.profile}
+        src="/gyfl.png"
+        alt="GYFL Logo"
+        width={75}
+        height={75}
+      />
+      <div style={{ marginLeft: "10px" }}>
+        <p className={styles.title}>고양외국어고등학교 일본어학과</p>
+        <p className={styles.date}>2015.03 - 2018.02</p>
+      </div>
+    </div>
+    <div className={styles.content1Container}>
+      <Image
+        className={styles.profile}
+        src="/ewha.png"
+        alt="EWHA Logo"
+        width={75}
+        height={75}
+      />
+      <div style={{ marginLeft: "10px" }}>
+        <p className={styles.title}>
+          <strong>이화여자대학교</strong> 소프트웨어학부 컴퓨터공학전공
+        </p>
+        <p className={styles.date}>
+          2019.03 - 2023.02{"("}예정{")"}
+        </p>
+      </div>
+    </div>
   </div>
 );
 const Content2 = (

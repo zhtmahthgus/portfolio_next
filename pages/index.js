@@ -3,10 +3,11 @@ import Image from "next/image";
 import Contents from "../components/contents";
 import Sliders from "../components/slider";
 import { getSortedPostsData } from "../lib/posts";
+import { useWindowWidth } from "../lib/useWindowWidth";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import useScrollSnap from "react-use-scroll-snap";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import styles from "../styles/Home.module.scss";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -21,6 +22,7 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+  const width = useWindowWidth();
   const revealRef = useRef();
   const scrollRef = useRef();
   useScrollSnap({ ref: scrollRef, duration: 10, delay: 10 });
@@ -42,8 +44,15 @@ export default function Home({ allPostsData }) {
       }
     );
   }, []);
-
-  return (
+  return width <= 767 ? (
+    <div className={styles.mobileContainer}>
+      <h1>모바일 화면은 공사 중!</h1>
+      <p>
+        아직 모바일 버전은 구현 중입니다.
+        <br />웹 버전으로 들어와주시면 감사하겠습니다:{"D"}
+      </p>
+    </div>
+  ) : (
     <div className={styles.container} ref={scrollRef}>
       <Head>
         <title>KimSH Portfolio</title>

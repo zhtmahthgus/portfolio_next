@@ -80,11 +80,11 @@ const Link = ({ data }) => {
 export default function Post({ postData }) {
   const [option, setOption] = useState(0);
   const PageContent = [
-    { id: 0, content: <Description data={postData} /> },
-    { id: 1, content: <Detail data={postData} /> },
-    { id: 2, content: <Video data={postData} /> },
-    { id: 3, content: <Images data={postData} /> },
-    { id: 4, content: <Link data={postData} /> },
+    { id: 0, title: "Description", content: <Description data={postData} /> },
+    { id: 1, title: "Detail", content: <Detail data={postData} /> },
+    { id: 2, title: "Video", content: <Video data={postData} /> },
+    { id: 3, title: "Images", content: <Images data={postData} /> },
+    { id: 4, title: "Link", content: <Link data={postData} /> },
   ];
   return (
     <div className={styles.container}>
@@ -95,27 +95,34 @@ export default function Post({ postData }) {
       <div className={styles.buttonContainer}>
         {PageContent.map((i) =>
           option === i.id ? (
-            <button
-              className={styles.optionButton_selected}
-              key={i.id}
-              onClick={() => {
-                setOption(i.id);
-              }}
-            />
+            <div key={i.id}>
+              <button
+                className={styles.optionButton_selected}
+                onClick={() => {
+                  setOption(i.id);
+                }}
+              />
+              <span className={styles.optionTitle_selected}>{i.title}</span>
+            </div>
           ) : (
-            <button
-              className={styles.optionButton}
-              key={i.id}
-              onClick={() => {
-                setOption(i.id);
-              }}
-            />
+            <div key={i.id}>
+              <button
+                className={styles.optionButton}
+                key={i.id}
+                onClick={() => {
+                  setOption(i.id);
+                }}
+              />
+              <span className={styles.optionTitle}>{i.title}</span>
+            </div>
           )
         )}
       </div>
       {PageContent.map((i) =>
         option === i.id ? (
-          <div className={styles.contentContainer}>{i.content}</div>
+          <div key={i.id} className={styles.contentContainer}>
+            {i.content}
+          </div>
         ) : null
       )}
     </div>
