@@ -13,7 +13,7 @@ const Content1 = (
     <div className={styles.content1Container}>
       <Image
         className={styles.profile}
-        src="/gyfl.png"
+        src="https://imgur.com/6WzsX1b.png"
         alt="GYFL Logo"
         width={75}
         height={75}
@@ -26,7 +26,7 @@ const Content1 = (
     <div className={styles.content1Container}>
       <Image
         className={styles.profile}
-        src="/ewha.png"
+        src="https://imgur.com/j2WkQVC.png"
         alt="EWHA Logo"
         width={75}
         height={75}
@@ -138,7 +138,7 @@ const Content5 = (
     <a href="https://github.com/zhtmahthgus">
       <Image
         className={styles.profile}
-        src="/GitHub-Logo.png"
+        src="https://imgur.com/9qW00rC.png"
         alt="GitHub Logo"
         width={85}
         height={48}
@@ -147,7 +147,7 @@ const Content5 = (
     <a href="https://kimalgo.tistory.com/">
       <Image
         className={styles.profile}
-        src="/tistory.png"
+        src="https://imgur.com/uTYmQLd.png"
         alt="Tistory Logo"
         width={48}
         height={48}

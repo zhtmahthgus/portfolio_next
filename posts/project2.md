@@ -10,11 +10,11 @@ description: "교내 웹 개발 동아리 프로젝트로 진행한 이화인을
 link: "https://github.com/EFUB-TEAM4/ewha-weather-frontend"
 image:
   [
-    "/p2/p2_1.png",
-    "/p2/p2_2.jpg",
-    "/p2/p2_3.png",
-    "/p2/p2_4.png",
-    "/p2/p2_5.png",
+    "https://imgur.com/gwS1Hur.png",
+    "https://imgur.com/10TuQAR.png",
+    "https://imgur.com/rfXNEP6.png",
+    "https://imgur.com/QjlEpHL.png",
+    "https://imgur.com/91rAgBi.png",
   ]
 video: "https://www.youtube.com/embed/CtyXcu8oWkc"
 ---
