@@ -5,7 +5,7 @@ import styles from "../styles/Contents.module.scss";
 
 const Content0 = (
   <div className={styles.content0}>
-    <h1 className={styles.title}>SoHyun's Universe</h1>
+    <h1 className={styles.title}>SoHyun&apos;s Universe</h1>
     <p className={styles.animated}>
       *Please Put Your Mouse On Titles To See Details*
     </p>
