@@ -21,7 +21,13 @@ const ImageSliders = ({ image }) => {
       <Slider {...settings}>
         {image.map((i, j) => (
           <div key={j} className={styles.content}>
-            <Image src={i} alt="project image" layout="fill" />
+            <Image
+              src={i}
+              alt="project image"
+              layout="fill"
+              placeholder="blur"
+              blurDataURL="https://via.placeholder.com/600x300"
+            />
           </div>
         ))}
       </Slider>

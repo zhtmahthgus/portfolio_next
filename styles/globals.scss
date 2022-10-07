@@ -5,7 +5,13 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, neodgm;
+}
+
+@font-face {
+  font-family: "neodgm";
+  font-weight: 200;
+  src: url("/fonts/neodgm.ttf") format("truetype");
 }
 
 a {
