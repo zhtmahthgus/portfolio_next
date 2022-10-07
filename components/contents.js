@@ -101,6 +101,8 @@ const Content0 = (
 );
 const Content1 = (
   <div className={styles.container}>
+    <p className={styles.category}>High School</p>
+    <hr className={styles.line} />
     <div className={styles.content1Container}>
       <Image
         className={styles.profile}
@@ -114,6 +116,8 @@ const Content1 = (
         <p className={styles.date}>2015.03 - 2018.02</p>
       </div>
     </div>
+    <p className={styles.category}>University</p>
+    <hr className={styles.line} />
     <div className={styles.content1Container}>
       <Image
         className={styles.profile}

@@ -65,9 +65,7 @@ export default function Home({ allPostsData }) {
           <div className={`${styles.particle} ${styles.particle1}`}></div>
           <div className={`${styles.particle} ${styles.particle2}`}></div>
         </div>
-        <h1 ref={revealRef} style={{ fontFamily: "neodgm" }}>
-          KimSH&apos;s Portfolio
-        </h1>
+        <h1 ref={revealRef}>KimSH&apos;s Portfolio</h1>
         <div>
           <Image
             className={styles.profile}
