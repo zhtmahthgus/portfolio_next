@@ -56,11 +56,7 @@ const Sliders = () => {
               X
             </button>
           </div>
-          <div className={styles.modalContent}>
-            Tel: 010-9787-9663
-            <br />
-            Email: 02sh02@naver.com
-          </div>
+          <div className={styles.modalContent}>Email: 02sh02@naver.com</div>
         </div>
       ) : null}
     </div>
