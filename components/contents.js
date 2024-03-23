@@ -16,7 +16,7 @@ const Content0 = (
           <Image
             className={styles.tooltipImagefile}
             src="https://imgur.com/Otkn2rv.png"
-            alt="Sun"
+            alt="안녕하세요"
             width={200}
             height={200}
           />
@@ -33,15 +33,15 @@ const Content0 = (
           <Image
             className={styles.tooltipImagefile}
             src="https://imgur.com/3XjosRE.png"
-            alt="Mercury"
+            alt="개발자 도구를 키셨나요"
             width={50}
             height={50}
           />
           <p className={styles.tooltipImageText}>
-            취미
+            직업
             <br />
             <br />
-            산책, 운동, 게임, 퍼즐
+            애플리케이션 개발자
           </p>
         </div>
       </>
@@ -50,15 +50,15 @@ const Content0 = (
           <Image
             className={styles.tooltipImagefile}
             src="https://imgur.com/BI1YgtG.png"
-            alt="Venus"
+            alt="제 코드 부끄러워요"
             width={100}
             height={100}
           />
           <p className={styles.tooltipImageText}>
-            목표
+            관심 영역
             <br />
             <br />
-            엄청 능력 짱인 개발자라 모두가 모셔가고 싶은데 나는 몰라
+            Application 및 SW 시스템 기획, 개발
           </p>
         </div>
       </>
@@ -67,15 +67,15 @@ const Content0 = (
           <Image
             className={styles.tooltipImagefile}
             src="https://imgur.com/kA678Bs.png"
-            alt="Earth"
+            alt="오늘 하루도 고생많으셨어요"
             width={90}
             height={90}
           />
           <p className={styles.tooltipImageText}>
-            행복할 때
+            취미
             <br />
             <br />
-            내가 상상한 대로 화면이 완성되는 과정을 볼 때ㅎㅎ
+            걸어서 동네 탐방, 일기 작성
           </p>
         </div>
       </>
@@ -89,10 +89,12 @@ const Content0 = (
             height={150}
           />
           <p className={styles.tooltipImageText}>
-            화날 때
+            Update Note
             <br />
             <br />
-            원인모를 오류.
+            v1.0.0 - 2022.10.10
+            <br />
+            v1.1.0 - 2024.03.23
           </p>
         </div>
       </>
@@ -131,7 +133,7 @@ const Content1 = (
           <strong>이화여자대학교</strong> 소프트웨어학부 컴퓨터공학전공
         </p>
         <p className={styles.date}>
-          2019.03 - 2023.02{"("}예정{")"}
+          2019.03 - 2023.02
         </p>
       </div>
     </div>
@@ -139,22 +141,25 @@ const Content1 = (
 );
 const Content2 = (
   <div className={styles.container}>
-    <p className={styles.category}>English</p>
+    <p className={styles.category}>Wonik Robotics</p>
     <hr className={styles.line} />
-    <p className={styles.title}>토익 920점</p>
-    <div className={styles.graphWrapper}>
-      <div style={{ width: "18.6rem" }}>
-        <div className={styles.graph} />
+    <div className={styles.content1Container}>
+      <Image
+        className={styles.profile}
+        src="https://imgur.com/Ano50pr.png"
+        alt="Wonik Logo"
+        width={75}
+        height={75}
+      />
+      <div style={{ marginLeft: "10px" }}>
+        <p className={styles.date}>
+          2023.01 -
+        </p>
+        <p className={styles.title}>
+          개발본부 어플리케이션팀
+        </p>
       </div>
     </div>
-    <p className={styles.date}>2022.03</p>
-    <p className={styles.title}>토익 스피킹 IM3</p>
-    <div className={styles.graphWrapper}>
-      <div style={{ width: "12rem" }}>
-        <div className={styles.graph} />
-      </div>
-    </div>
-    <p className={styles.date}>2022.09</p>
   </div>
 );
 const Content3 = (
@@ -162,24 +167,28 @@ const Content3 = (
     <p className={styles.animated}>
       *Please Put Your Mouse On Titles To See Details*
     </p>
+    <p className={styles.category}>Language</p>
+    <hr className={styles.line} />
+    <p className={styles.title}>Toeic 920</p>
+    <div className={styles.graphWrapper}>
+      <div style={{ width: "18.6rem" }}>
+        <div className={styles.graph} />
+      </div>
+    </div>
+    <p className={styles.date}>2022.03.13</p>
+    <p className={styles.title}>Toeic Speaking IM3</p>
+    <div className={styles.graphWrapper}>
+      <div style={{ width: "12rem" }}>
+        <div className={styles.graph} />
+      </div>
+    </div>
+    <p className={styles.date}>2022.09.17</p>
     <p className={styles.category}>Coding Skills</p>
     <hr className={styles.line} />
     <p className={styles.title}>
       <span className={styles.tooltip}>
         HTML/CSS, JavaScript
-        <span className={styles.tooltipText}>프로젝트 경험 다수</span>
-      </span>
-    </p>
-    <div className={styles.graphWrapper}>
-      <div style={{ width: "18rem" }}>
-        <div className={styles.graph} />
-      </div>
-    </div>
-
-    <p className={styles.title}>
-      <span className={styles.tooltip}>
-        Python, C, Java
-        <span className={styles.tooltipText}>학업 레벨 수준</span>
+        <span className={styles.tooltipText}>프로젝트 경험 다수, 업무 시 주 활용 언어</span>
       </span>
     </p>
     <div className={styles.graphWrapper}>
@@ -187,8 +196,28 @@ const Content3 = (
         <div className={styles.graph} />
       </div>
     </div>
-    <p className={styles.category}>Framework/Library</p>
-    <hr className={styles.line} />
+    <p className={styles.title}>
+      <span className={styles.tooltip}>
+        Python
+        <span className={styles.tooltipText}>업무 시 부분 활용</span>
+      </span>
+    </p>
+    <div className={styles.graphWrapper}>
+      <div style={{ width: "7rem" }}>
+        <div className={styles.graph} />
+      </div>
+    </div>
+    <p className={styles.title}>
+      <span className={styles.tooltip}>
+        Python, C, Java
+        <span className={styles.tooltipText}>학업 레벨 수준</span>
+      </span>
+    </p>
+    <div className={styles.graphWrapper}>
+      <div style={{ width: "5rem" }}>
+        <div className={styles.graph} />
+      </div>
+    </div>
     <p className={styles.title}>
       <span className={styles.tooltip}>
         React
@@ -196,7 +225,7 @@ const Content3 = (
       </span>
     </p>
     <div className={styles.graphWrapper}>
-      <div style={{ width: "18rem" }}>
+      <div style={{ width: "10rem" }}>
         <div className={styles.graph} />
       </div>
     </div>
@@ -207,7 +236,7 @@ const Content3 = (
       </span>
     </p>
     <div className={styles.graphWrapper}>
-      <div style={{ width: "10rem" }}>
+      <div style={{ width: "5rem" }}>
         <div className={styles.graph} />
       </div>
     </div>
@@ -227,7 +256,7 @@ const Content3 = (
     <p className={styles.title}>Github.io, Heroku, Netlify</p>
     <p className={styles.category}>Collaboration Tools</p>
     <hr className={styles.line} />
-    <p className={styles.title}>Github, Slack, Notion</p>
+    <p className={styles.title}>Github, Figma, Jira, Slack, Notion</p>
   </div>
 );
 const Content5 = (
@@ -298,7 +327,7 @@ export default function Contents({ allPostsData }) {
   const options = [
     { id: 0, title: "About Me", content: Content0 },
     { id: 1, title: "Graduation", content: Content1 },
-    { id: 2, title: "Language", content: Content2 },
+    { id: 2, title: "Careers", content: Content2 },
     { id: 3, title: "Skills", content: Content3 },
     { id: 4, title: "Projects", content: Content4 },
     { id: 5, title: "Links", content: Content5 },
