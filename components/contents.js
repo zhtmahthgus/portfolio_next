@@ -146,7 +146,7 @@ const Content2 = (
     <div className={styles.content1Container}>
       <Image
         className={styles.profile}
-        src="https://imgur.com/Ano50pr.png"
+        src="/wonik.png"
         alt="Wonik Logo"
         width={75}
         height={75}
