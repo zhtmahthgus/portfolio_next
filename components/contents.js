@@ -15,7 +15,7 @@ const Content0 = (
         <div className={styles.tooltipImage}>
           <Image
             className={styles.tooltipImagefile}
-            src="https://imgur.com/Otkn2rv.png"
+            src="/2_sun.png"
             alt="안녕하세요"
             width={200}
             height={200}
@@ -32,7 +32,7 @@ const Content0 = (
         <div className={styles.tooltipImage}>
           <Image
             className={styles.tooltipImagefile}
-            src="https://imgur.com/3XjosRE.png"
+            src="/2_mercury.png"
             alt="개발자 도구를 키셨나요"
             width={50}
             height={50}
@@ -49,8 +49,8 @@ const Content0 = (
         <div className={styles.tooltipImage}>
           <Image
             className={styles.tooltipImagefile}
-            src="https://imgur.com/BI1YgtG.png"
-            alt="제 코드 부끄러워요"
+            src="/2_venus.png"
+            alt="아니면 또 이미지가 깨졌나요"
             width={100}
             height={100}
           />
@@ -66,8 +66,8 @@ const Content0 = (
         <div className={styles.tooltipImage}>
           <Image
             className={styles.tooltipImagefile}
-            src="https://imgur.com/kA678Bs.png"
-            alt="오늘 하루도 고생많으셨어요"
+            src="/2_earth.png"
+            alt="제 코드 부끄럽네요"
             width={90}
             height={90}
           />
@@ -83,7 +83,7 @@ const Content0 = (
         <div className={styles.tooltipImage}>
           <Image
             className={styles.tooltipImagefile}
-            src="https://imgur.com/WnlbltH.png"
+            src="/2_jupiter.png"
             alt="지구 다음은 화성인거 알아요"
             width={150}
             height={150}
@@ -108,7 +108,7 @@ const Content1 = (
     <div className={styles.content1Container}>
       <Image
         className={styles.profile}
-        src="https://imgur.com/6WzsX1b.png"
+        src="/3_gyfl.png"
         alt="GYFL Logo"
         width={75}
         height={75}
@@ -123,7 +123,7 @@ const Content1 = (
     <div className={styles.content1Container}>
       <Image
         className={styles.profile}
-        src="https://imgur.com/j2WkQVC.png"
+        src="/3_ewha.png"
         alt="EWHA Logo"
         width={75}
         height={75}
@@ -146,7 +146,7 @@ const Content2 = (
     <div className={styles.content1Container}>
       <Image
         className={styles.profile}
-        src="/wonik.png"
+        src="/4_wonik.png"
         alt="Wonik Logo"
         width={75}
         height={75}
@@ -261,26 +261,31 @@ const Content3 = (
 );
 const Content5 = (
   <div className={styles.container}>
-    <div className={styles.content5}>
-      <a href="https://github.com/zhtmahthgus">
-        <Image
-          className={styles.profile}
-          src="https://imgur.com/9qW00rC.png"
-          alt="GitHub Logo"
-          width={85}
-          height={48}
-        />
-      </a>
-      <a href="https://kimalgo.tistory.com/">
-        <Image
-          className={styles.profile}
-          src="https://imgur.com/uTYmQLd.png"
-          alt="Tistory Logo"
-          width={48}
-          height={48}
-        />
-      </a>
-    </div>
+    <p className={styles.animated}>
+      *Please Click Images To Go To Links*
+    </p>
+    <p className={styles.category}>Project Code</p>
+    <hr className={styles.line} />
+    <a href="https://github.com/zhtmahthgus">
+      <Image
+        className={styles.profile}
+        src="/5_github.png"
+        alt="GitHub Logo"
+        width={90}
+        height={48}
+      />
+    </a>
+    <p className={styles.category}>Blog</p>
+    <hr className={styles.line} />
+    <a href="https://kimalgo.tistory.com/" style={{marginLeft: '20px'}}>
+      <Image
+        className={styles.profile}
+        src="/5_tistory.png"
+        alt="Tistory Logo"
+        width={48}
+        height={48}
+      />
+    </a>
   </div>
 );
 

@@ -69,7 +69,7 @@ export default function Home({ allPostsData }) {
         <div>
           <Image
             className={styles.profile}
-            src="https://imgur.com/z4uNrNQ.png"
+            src="/1_logo.png"
             alt="Next.js Logo"
             width={125}
             height={125}
