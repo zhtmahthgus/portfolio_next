@@ -141,7 +141,10 @@ const Content1 = (
 );
 const Content2 = (
   <div className={styles.container}>
-    <p className={styles.category}>Wonik Robotics</p>
+    <p className={styles.animated}>
+      *Please Put Your Mouse On Titles To See Details*
+    </p>
+    <p className={styles.category}>2023.01 -</p>
     <hr className={styles.line} />
     <div className={styles.content1Container}>
       <Image
@@ -152,11 +155,21 @@ const Content2 = (
         height={75}
       />
       <div style={{ marginLeft: "10px" }}>
-        <p className={styles.date}>
-          2023.01 -
+        <p className={`${styles.title} ${styles.bigger}`}>
+          Wonik Robotics
         </p>
-        <p className={styles.title}>
+        <p>
           개발본부 어플리케이션팀
+        </p>
+        <p className={styles.date}>
+          <span className={styles.tooltip}>
+            다중 로봇 관제 시스템 및 관련 애플리케이션, 로봇 GUI 기획 및 개발
+            <span className={styles.tooltipText}>
+              1. 웹 기반 관제 시스템 기능 기획 및 백엔드 및 프론트엔드 개발<br/>
+              2. 로봇 호출, 상태 모니터링 목적 웹뷰 기반 안드로이드 App 개발<br/>
+              3. 로봇 Display에 출력되는 UI 개발
+            </span>
+          </span>
         </p>
       </div>
     </div>
