@@ -26,6 +26,7 @@
 
 .title {
   margin: 0;
+  margin-top: 15vh;
   font-size: 2.8rem;
   text-shadow: 0 0 0.5rem #84d0ff, 0 0 1rem #84d0ff, 0 0 2rem #84d0ff;
   font-family: "neodgm";
@@ -37,13 +38,12 @@
   word-break: keep-all;
   white-space: pre-line;
   text-align: center;
-  margin-top: 7.5rem;
+  margin-top: 0;
 }
 
 .category {
-  margin: 0;
+  margin: 10vh 0 10vh 0;
   font-size: 2rem;
-  margin: 5rem 0 1rem 0;
   font-family: "neodgm";
 }
 
@@ -54,11 +54,14 @@
   h2 {
     font-size: 1.8rem;
   }
+  h3:first-child {
+    margin-top: 0;
+  }
 }
 
 .link {
   font-size: 1.4rem;
-  margin: 5rem 0 1rem 0;
+  margin: 0 0 1rem 0;
   font-family: "neodgm";
 }
 

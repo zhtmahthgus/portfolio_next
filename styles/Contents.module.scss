@@ -94,6 +94,10 @@
   margin: 0;
 }
 
+.bigger {
+  font-size: 1.6rem;
+}
+
 .animated {
   font-size: 1.4rem;
   margin: 0;
@@ -141,7 +145,7 @@
 .tooltipText {
   display: none;
   position: absolute;
-  max-width: 20rem;
+  min-width: 20rem;
   border: 0.1rem solid rgb(117, 189, 218);
   border-radius: 0.2rem;
   padding: 0.5rem;
