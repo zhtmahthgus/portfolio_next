@@ -30,6 +30,6 @@ React.js
 ### **주요 구현 기능**
 
 반응형 달력 컴포넌트 구현  
-Meta Tag를 이용한 Open Graphic 적용  
-SNS 공유  
+Meta Tag, Open Graph 적용을 통한 미리보기 화면 생성
+API를 이용한 사진 저장 및 SNS 공유  
 Recoil을 이용한 전역상태관리
