@@ -182,13 +182,13 @@ const Content3 = (
     </p>
     <p className={styles.category}>Language</p>
     <hr className={styles.line} />
-    <p className={styles.title}>Toeic 920</p>
+    <p className={styles.title}>Toeic 915</p>
     <div className={styles.graphWrapper}>
       <div style={{ width: "18.6rem" }}>
         <div className={styles.graph} />
       </div>
     </div>
-    <p className={styles.date}>2022.03.13</p>
+    <p className={styles.date}>2024.03.16</p>
     <p className={styles.title}>Toeic Speaking IM3</p>
     <div className={styles.graphWrapper}>
       <div style={{ width: "12rem" }}>
